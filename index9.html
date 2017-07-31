@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>:nth-child Demo</title>
+	<link rel="stylesheet" href="http://necolas.github.com/normalize.css/2.0.1/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+	<body>
+<div class="wrapper">
+<section class="checked work">
+<h3>Works</h3>
+<div>
+	<h4>Checkebox</h4>
+	<input type="checkbox"> <span>Ice Cream</span><br>
+	<input type="checkbox"> <span>Ice Tea</span><br>
+
+	<h4>Radio</h4>
+	<input type="radio" name="check"> <span>Male</span><br>
+	<input type="radio" name="check"> <span>Female</span><br>
+</div>
+
+<pre>
+input:checked + span {
+	font-weight: bold;
+}
+</pre>
+</section>
+		</div>
+	</body>
+</html>

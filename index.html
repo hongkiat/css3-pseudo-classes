@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>
+CSS3 Pseudo-classes - Hongkiat.com
+</title>
+
+<!--  jquery -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="../_nav/js/jquery.js"><\/script>')</script>
+
+<!-- demo scripts -->
+<link rel="stylesheet" href="css/style.css">
+
+<!-- nav script -->
+<script src="../_nav/js/nav.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+<!-- nav meta -->
+<div class="demo-meta">
+	<h1 class="demo-title">CSS3 Pseudo-classes</h1>
+	<p class="demo-desc">This demo shows some basic applications of CSS3 Pseudo-classes</p>
+</div>
+
+<!-- demo content -->
+<div class="wrapper">
+<section class="nth-child work">
+	<h3>Works</h3>
+	<div>
+		<!-- Paragraph -->
+		<p><strong>Paragraph 1:</strong>Tiramisu gummi bears faworki dragee. Faworki faworki dessert sweet. Souffle powder biscuit lemon drops topping wypas.</p>
+		<p><strong>Paragraph 2:</strong>Sweet icing applicake. Apple pie applicake bonbon cake danish cookie jujubes. Topping croissant tiramisu pie jelly-o pudding.</p>
+		<p><strong>Paragraph 3:</strong> Oat cake pastry chocolate dessert brownie wafer candy. Caramels chocolate cake marzipan. Biscuit candy pudding dessert brownie dragee halvah donut gummi bears.</p>
+		<h4>Codes</h4>
+<pre>
+p:nth-child(2) {
+	padding: 15px;
+	background-color: #333;
+	color: #fff;
+}
+</pre>
+
+<!-- Unordered List -->
+<ul>
+	<li><strong>List 1:</strong> Cotton candy apple pie topping.</li>
+	<li><strong>List 2:</strong> Biscuit gummi bears sweet</li>
+	<li><strong>List 3:</strong> Jujubes fruitcake bear claw chocolate bar.</li>
+	<li><strong>List 4:</strong> Tart carrot cake cookie marzipan pastry toffee.</li>
+	<li><strong>List 5:</strong> Wafer tiramisu marzipan tart.</li>
+	<li><strong>List 6:</strong> Halvah chocolate bar.</li>
+	<li><strong>List 7:</strong> Toffee sugar plum.</li>
+	<li><strong>List 8:</strong> Caramels pastry pie.</li>
+</ul>
+</div>
+<h4>Codes</h4>
+<pre>
+li:nth-child(2n+1) {
+	padding: 5px;
+	background-color: #333;
+	color: #fff;
+	margin: 10px 0; 
+}
+</pre>
+</section>
+
+<section class="nth-child no-work">
+<h3>Doesn't Work</h3>
+<div>
+	<p><strong>Paragraph 1:</strong>Tiramisu gummi bears faworki dragee. Faworki faworki dessert sweet. Souffle powder biscuit lemon drops topping wypas.</p>
+
+	<blockquote>
+		<p><strong>Blockquote</strong> Oat cake sugar plum tiramisu jelly cupcake dragee powder. Caramels pastry pie danish fruitcake bonbon chocolate cake bear claw.</p>
+	</blockquote>
+	
+	<p><strong>Paragraph 2:</strong>Sweet icing applicake. Apple pie applicake bonbon cake danish cookie jujubes. Topping croissant tiramisu pie jelly-o pudding.</p>
+	<p><strong>Paragraph 3:</strong> Oat cake pastry chocolate dessert brownie wafer candy. Caramels chocolate cake marzipan. Biscuit candy pudding dessert brownie dragee halvah donut gummi bears.</p>
+</div>
+<h4>Codes</h4>
+<pre>
+p:nth-child(2) {
+	padding: 15px;
+	background-color: #333;
+	color: #fff;
+}
+</pre>
+<p><em>The second paragraph won't be selected as the position is replaced with a blockquote element.</em></p>
+</section>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>:enabled and disabled Demo</title>
+	<link rel="stylesheet" href="http://necolas.github.com/normalize.css/2.0.1/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+	<body>
+		<div class="wrapper">
+			<section class="enabled-disabled work">
+				<h3>Works</h3>
+				<div>
+					<div style="margin-bottom: 10px;">
+						<label>Disabled Input</label>
+						<input type="text" disabled="disabled" placeholder="disabled">
+					</div>
+
+					<div>
+						<label>Enabled Input</label>
+						<input type="text" placeholder="enabled">	
+					</div>
+				</div>
+
+				<h4>Codes</h4>
+				<pre>
+input:enabled {
+	background-color: #fff;
+	border: 2px solid #79be6a;
+}
+input:disabled {
+	background-color: #f3f3f3;
+	border: 2px solid #c33a36;
+}
+				</pre>
+			</section>
+		</div>
+	</body>
+</html>

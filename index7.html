@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>:target Demo</title>
+	<link rel="stylesheet" href="http://necolas.github.com/normalize.css/2.0.1/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="wrapper">
+<section class="target work">
+<h3>Works</h3>
+
+<a class="button" href="#target">Click Me!</a>
+
+<div>
+	<p id="target"><strong>Paragraph 1:</strong>Sweet icing applicake. Apple pie applicake bonbon cake danish cookie jujubes. Topping croissant tiramisu pie jelly-o pudding.</p>
+</div>
+
+<strong>HTML</strong>
+<pre>
+&lt;a href="target"&gt;Click Me!&lt;/a&gt;
+&lt;div&gt;
+	&lt;p id=&quot;target&quot;&gt;&lt;strong&gt;Paragraph 1:&lt;/strong&gt;Sweet icing applicake. Apple pie applicake bonbon cake danish cookie jujubes. Topping croissant tiramisu pie jelly-o pudding.&lt;/p&gt;
+&lt;/div&gt;
+</pre>
+<h4>CSS</h4>
+<pre>
+p:target {
+	padding: 15px;
+	background-color: #333;
+	color: #fff;
+}
+</pre>
+
+
+</div>
+</body>
+</html>

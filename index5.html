@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>:only-of-type Demo</title>
+	<link rel="stylesheet" href="http://necolas.github.com/normalize.css/2.0.1/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="wrapper">
+<section class="only-of-type work">
+<h3>Works</h3>
+<div>
+	<p>Tiramisu gummi bears faworki dragee. Faworki faworki dessert sweet. Souffle powder biscuit lemon drops topping wypas.
+	</p>
+</div>
+
+<strong>HTML</strong>
+<pre>
+&lt;div&gt;
+&lt;p&gt;Tiramisu gummi bears faworki dragee. Faworki faworki dessert sweet. Souffle powder biscuit lemon drops topping wypas.&lt;/p&gt;
+&lt;/div&gt;
+</pre>
+
+<h4>CSS</h4>
+<pre>
+p:only-of-type {
+	padding: 15px;
+	background-color: #333;
+	color: #fff;
+}
+</pre>
+
+<div>
+	<!-- Paragraph -->
+	<p><strong>Paragraph 1:</strong>Sweet icing applicake. Apple pie applicake bonbon cake danish cookie jujubes. Topping croissant tiramisu pie jelly-o pudding.</p>
+
+	<blockquote><strong>Blockquote:</strong> Oat cake pastry chocolate dessert brownie wafer candy.</blockquote>
+</div>
+
+<strong>HTML</strong>
+<pre>
+&lt;p&gt;&lt;strong&gt;Paragraph 1:&lt;/strong&gt;Sweet icing applicake. Apple pie applicake bonbon cake danish cookie jujubes. Topping croissant tiramisu pie jelly-o pudding.&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;strong&gt;Blockquote:&lt;/strong&gt; Oat cake pastry chocolate dessert brownie wafer candy.&lt;/p&gt;&lt;/blockquote&gt;
+</pre>
+
+</section>
+<h4>CSS</h4>
+<pre>
+p:only-of-type {
+	padding: 15px;
+	background-color: #333;
+	color: #fff;
+}
+</pre>
+</section>
+
+<section class="only-of-type no-work">
+<h3>Doesn't Work</h3>
+<div>
+	<!-- Paragraph -->
+	<p><strong>Paragraph 1:</strong>Sweet icing applicake. Apple pie applicake bonbon cake danish cookie jujubes. Topping croissant tiramisu pie jelly-o pudding.</p>
+
+	<p><strong>Paragraph 2:</strong> Oat cake pastry chocolate dessert brownie wafer candy. Caramels chocolate cake marzipan. Biscuit candy pudding dessert brownie dragee halvah donut gummi bears.</p>
+</div>
+
+<strong>HTML</strong>
+
+<pre>
+&lt;div&gt;
+&lt;p&gt;&lt;strong&gt;Paragraph 1:&lt;/strong&gt;Sweet icing applicake. Apple pie applicake bonbon cake danish cookie jujubes. Topping croissant tiramisu pie jelly-o pudding.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Paragraph 2:&lt;/strong&gt; Oat cake pastry chocolate dessert brownie wafer candy. Caramels chocolate cake marzipan. Biscuit candy pudding dessert brownie dragee halvah donut gummi bears.&lt;/p&gt;
+&lt;/div&gt;
+</pre>
+
+<h4>CSS</h4>
+<pre>
+p:only-of-type {
+	padding: 15px;
+	background-color: #333;
+	color: #fff;
+}
+</pre>
+
+<p><em>The styles are not applied as there are two <code>&lt;p&gt;</code> inside one parent.</em></p>
+
+</div>
+</body>
+</html>
